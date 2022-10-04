@@ -114,33 +114,17 @@ export const biggestAvocadoFarms = () => {
 
 // 6 Arreglo con nombres de los administradores de la FORESTAL Y AGRÍCOLA LO ENCINA, ordenados por nombre, que trabajen más de 1000 m2 de Cerezas
 export const biggestCherriesManagers = () => {
-  let biggestCherriesManagers = paddocks.map((farmManager) => {
-    if (farmManager.farmId === 3 && farmManager.area > 1000 && farmManager.paddockTypeId === 3) {
-      farmManager.paddockManagerId;
-    }
-  });
-
-  biggestCherriesManagers.sort();
-  return biggestCherriesManagers;
 }
 
 // 7 Objeto en el cual las claves sean el nombre del administrador y el valor un arreglo con los nombres de los campos que administra,
 // ordenados alfabéticamente
 export const farmManagerPaddocks = () => {
-  // Implementar
-  let farmManagers = [];
-  let farmManagerPaddocks = farmManagers.map((farmManager) => farmManager.name);
-  farmManagerPaddocks.sort();
-  return farmManagerPaddocks;
 }
 
 // 8 Objeto en que las claves sean el tipo de cultivo concatenado con su año de plantación
 // (la concatenación tiene un separador de guión ‘-’, por ejemplo AVELLANOS-2020)
 // y el valor otro objeto en el cual la clave sea el id del administrador y el valor el nombre del administrador
 export const paddocksManagers = () => {
-  // Implementar
-  let paddocksManagers = paddocks.map((paddock) => paddock.paddockTypeId + '-' + paddock.harvestYear);
-  return paddocksManagers;
 }
 
 
